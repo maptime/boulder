@@ -1,12 +1,12 @@
-baseurl: /starter
+baseurl: /boulder
 permalink: pretty
 markdown: kramdown
 paginate: 5
-repo: starter
+repo: boulder
 github_org: maptime
 maptime:
-  chapter: Chapter name
-  twitter: TwitterHandle
+  chapter: MaptimeBoulder
+  twitter: MaptimeBoulder
   #disqus: YOUR DISQUS USERNAME
 
 gems:
