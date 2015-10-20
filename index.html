@@ -2,6 +2,22 @@
 layout: default
 ---
 
+<div class="sticky-info">
+  <h2>Welcome to Maptime Boulder!</h2>
+  We are a group of map enthusiasts that meet regularly in Boulder, Colorado!
+
+  You can always find us at: <br>
+  <p span style="text-align:center"><a class="button fill-red" href="http://meetup.com/Maptime-Boulder">meetup.com/Maptime-boulder</a></span>
+  <br><br>
+  <h3>Check out some of the latest resources we've compiled:</h3>
+  <ul>
+    <li><a href="https://www.mapbox.com/blog/osm-mapping-guide/">Getting Started with OSM</a></li>
+    <li><a href="http://www.townsendjennings.com/github-101/gh-pages/#/">GitHub Pages 101</a></li>
+  </ul>
+</div>
+
+
+<h2>Upcoming Events</h2>
 <!-- This loops through the paginated posts -->
 {% for item in paginator.posts %}
 <div class='space-bottom4'>
@@ -44,4 +60,3 @@ layout: default
     <a href='{{site.baseurl}}/page{{ paginator.next_page }}' class='button fill-blue rcon right-arrow'>Older</a>
   {% endif %}
 </div>
-
