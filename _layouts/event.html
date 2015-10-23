@@ -5,6 +5,11 @@ layout: default
 <h2>{{page.title}}</h2>
 {{content}}
 
+{% if page.when == "TBD" %}
+	<div class='keyline-all round pad2 col12 clearfix' style="text-align:center;">
+		 <span class='quiet'>Date To-Be-Determined!</span>
+	</div>
+{% else %}
 <div class='keyline-all round pad2 col12 clearfix'>
   <div class='col8 pad0y'>
     Join us: <span class='quiet'>{{page.date | date:"%A, %b %d %Y"}}</span>
@@ -13,4 +18,4 @@ layout: default
     <a class='button fill-orange block' href='{{page.rsvp}}'>RSVP</a>
   </div>
 </div>
-
+{% endif %}

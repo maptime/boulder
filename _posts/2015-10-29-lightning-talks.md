@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: Maptime <em>Ignite</em> Talks
-rsvp: http://www.meetup.com/Maptime-Boulder/
+rsvp: http://www.meetup.com/Maptime-Boulder/events/226194953/
 ---
 
 Our next event will be a series of short talks from our members on different topics of interest.
