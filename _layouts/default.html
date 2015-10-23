@@ -99,7 +99,7 @@
 <script>
   var rsvp = document.getElementById('rsvpdate');
   var date,formatted,link;
-  '{% for item in site.categories.event limit:1 %}'
+  '{% for item in site.categories.event | first %}'
     date = '{{item.date | date:"%Y/%-m/%-d"}}';
     formatted = '{{item.date | date:"%A, %b %d %Y"}}';
     link = '{{item.rsvp}}';
