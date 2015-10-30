@@ -20,35 +20,54 @@ layout: default
 
 <h2>Upcoming Events</h2>
 <!-- This loops through the paginated posts -->
-{% for item in paginator.posts reversed%}
+{% for item in paginator.posts%}
 <div class='space-bottom4'>
 
   {% if item.category == 'event' %}
-    <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
-    {{item.content}}
-    {% if item.when == "TBD" %}
-      <div class='keyline-all round pad2 col12 clearfix' style="text-align:center;">
-         <span class='quiet'>Date to be determined!</span>
-      </div>
-    {% else %}
-      <div class='keyline-all round pad2 col12 clearfix'>
-        <div class='col8 pad0y'>
-          Join us: <span class='quiet'>{{item.date | date:"%A, %b %d %Y"}}</span>
+    {% if item.date > site.time %}
+      <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+      {{item.content}}
+
+      {% if item.when == "TBD" %}
+        <div class='keyline-all round pad2 col12 clearfix' style="text-align:center;">
+           <span class='quiet'>Date to be determined!</span>
         </div>
-        <div class='col4'>
-          <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
+      {% else %}
+        <div class='keyline-all round pad2 col12 clearfix'>
+          <div class='col8 pad0y'>
+            Join us: <span class='quiet'>{{item.date | date:"%A, %b %d %Y"}}</span>
+          </div>
+          <div class='col4'>
+            <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
+          </div>
         </div>
-      </div>
+
+      {% endif %}
+    {% endif %}
   {% endif %}
+</div>
+{% endfor %}
 
-  {% else %}
+<h2>Past Events</h2>
+<!-- This loops through the paginated posts -->
+{% for item in paginator.posts%}
+<div class='space-bottom4'>
 
-    <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
-    {{item.content}}
-    <div class='pad1y keyline-top'>
-      <strong class='quiet small block space-bottom1'>Posted {{item.date | date:"%b %d %Y"}} by {{item.author}}</strong>
-    </div>
+  {% if item.category == 'event' %}
+    {% if item.date < site.time %}
+      <h2><a href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a></h2>
+      {{item.content}}
 
+        <div class='keyline-all round pad2 col12 clearfix'>
+          <div class='col8 pad0y'>
+            Event Date:  <span class='quiet'>{{item.date | date:"%A, %b %d %Y"}}</span>
+          </div>
+          <div class='col4'>
+            <a class='button fill-orange block' href='{{item.rsvp}}'>Link to Meetup</a>
+          </div>
+        </div>
+
+    {% endif %}
   {% endif %}
 </div>
 {% endfor %}

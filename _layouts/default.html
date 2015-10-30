@@ -99,13 +99,18 @@
 <script>
   var rsvp = document.getElementById('rsvpdate');
   var date,formatted,link;
-  '{% for item in site.categories.event | first %}'
-    date = '{{item.date | date:"%Y/%-m/%-d"}}';
-    formatted = '{{item.date | date:"%A, %b %d %Y"}}';
-    link = '{{item.rsvp}}';
+  '{% for item in site.categories.event %}'
+    '{% if item.date > site.time %}'
+      date = '{{item.date | date:"%Y/%-m/%-d"}}';
+      formatted = '{{item.date | date:"%A, %b %d %Y"}}';
+      link = '{{item.rsvp}}';
+    '{% endif %}'
   '{% endfor %}'
 
+  console.log(date)
+
   if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
+
     rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
     '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
   } else {
