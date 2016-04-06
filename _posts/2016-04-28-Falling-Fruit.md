@@ -3,6 +3,7 @@ layout: event
 category: event
 title: Falling Fruit 
 rsvp: http://www.meetup.com/Maptime-Boulder/events/230134267/
+published: false
 ---
 
 On this off-week meeting, the co-founder of http://fallingfruit.org/ will be giving a presentation.
