@@ -1,8 +1,9 @@
 ---
 layout: event
 category: event
-title: Steve Coast
-rsvp: ''
-published: false
+title: OpenStreetMap with Steve Coast
+rsvp: 'http://www.meetup.com/Maptime-Boulder/events/231022745/'
+published: true
 ---
 
+Steve Coast, founder of OpenStreetMap, will be joining us for this meet up to discuss past, present and future OSM projects.
