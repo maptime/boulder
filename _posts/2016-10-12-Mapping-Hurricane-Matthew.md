@@ -16,6 +16,10 @@ This will be an interactive, hands-on Mapathon, so please bring a computer to pa
 
 To learn more about remote tracing in OpenStreetMap, see the [remote tracing guide here] (http://learnosm.org/en/coordination/remote-tracing/)
 
+[A guide for tonight](https://docs.google.com/document/d/1K9PEpMNKxrX-WZnX1f7RhUsew_rmcC79A2OzhV64M-0/edit?usp=sharing)
+
 Look forward to seeing everybody Wednesday!
 
 PS: Some people really enjoy using a separate, external mouse instead of a trackpad for this type of work, so consider bringing one if you have one!
+
+
