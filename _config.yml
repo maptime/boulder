@@ -12,3 +12,4 @@ maptime:
 future: true
 gems:
   - jekyll-feed
+  - jekyll-paginate

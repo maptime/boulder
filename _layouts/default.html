@@ -102,7 +102,7 @@
   '{% for item in site.categories.event %}'
     '{% if item.date > site.time %}'
       date = '{{item.date | date:"%Y/%-m/%-d"}}';
-      formatted = '{{item.date | date:"%A, %b %d %Y"}}';
+      formatted = '{{item.date | date:"%A, %b %d %Y %I:%M %p"}}';
       link = '{{item.rsvp}}';
     '{% endif %}'
   '{% endfor %}'
