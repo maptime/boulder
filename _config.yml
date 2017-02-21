@@ -9,6 +9,9 @@ maptime:
   twitter: MaptimeBoulder
   #disqus: YOUR DISQUS USERNAME
 
+include:
+  - examples
+
 future: true
 gems:
   - jekyll-feed
