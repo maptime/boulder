@@ -21,5 +21,3 @@ To learn more about remote tracing in OpenStreetMap, see the [remote tracing gui
 Look forward to seeing everybody Wednesday!
 
 PS: Some people really enjoy using a separate, external mouse instead of a trackpad for this type of work, so consider bringing one if you have one!
-
-

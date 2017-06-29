@@ -22,10 +22,10 @@
 </head>
 <body>
 
-<!-- <div class='round shadow-darken5' id="instructions">
-  <h1 style="text-align:center; font-weight:800;">Explore Space!</h1>
-  <p>Scroll to zoom <br> Click and drag to pan around this geo-tagged image of the The Helix Nebula.</p>
-</div> -->
+<div class='round shadow-darken5' id="instructions">
+  <h1 style="text-align:center; font-weight:800;">Exploring Mars!</h1>
+  <p>Scroll to zoom <br> Click and drag to pan around this geo-tagged image of mars.</p>
+</div>
 <div id="map"></div>
 
 <script>
@@ -34,8 +34,8 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamVubmluZ3NhbmRlcnNvbiIsImEiOiIzMHZndnpvIn0.PS-j7fRK3HGU7IE8rbLT9A';
 
 //Create bounds
-var southWest = L.latLng(0,0),
-    northEast = L.latLng(44,44),
+var southWest = L.latLng(41.257,0.945),
+    northEast = L.latLng(66.594,45.714),
     bounds = L.latLngBounds(southWest, northEast);
 
 //Initialize a map
@@ -44,50 +44,38 @@ var map = L.mapbox.map('map', null,{
     // see full maxBounds documentation:
     // http://leafletjs.com/reference.html#map-maxbounds
     maxBounds: bounds,
-    maxZoom: 8,
-    minZoom: 2,
+    maxZoom: 7,
+    minZoom: 4,
+    zoom: 4,
     inertia: false
-  }).setView([22,22],3)
+  }).setView([55,23],6)
 
 //Put the coords in the URL
 var hash = L.hash(map);
 
 //Create the geotif layer
-var layer = L.mapbox.tileLayer('martham93.610bq92o',{
-	maxNativeZoom:8,
-	maxZoom:10,
-	attribution: "<a href='http://hubblesite.orxg/image/1608/news_release/2004-32'>Nasa Hubble</a>"})
+var layer = L.mapbox.tileLayer('jenningsanderson.4212xm80')
 
 //Add it to the map
 layer.addTo(map)
 
 //Make a marker
-var marker = L.marker([22.909,22.299], {
+var marker = L.marker([52.909,34.299], {
   icon: L.mapbox.marker.icon({
     'marker-color': '#f86767'
   }),
   draggable: false
 }).bindPopup('We can annotate things on the map').addTo(map);
 
-var marker2 = L.marker([10,10.192], {
+var marker2 = L.marker([58.757,22.192], {
   icon: L.mapbox.marker.icon({
     'marker-color': '#f86767'
   }),
   draggable: false
 }).bindPopup('What is this?').addTo(map);
 
-//
-// map.on('load',function(){
-//   console.log('what')
-setTimeout(function(){
-  console.log('fly')
-  map.flyTo(
-    L.latLng(10,10),7,
-      {animate:true,
-       duration: 5}
-    )
-},1000)
-// });
+
+
 </script>
 
 </body>
