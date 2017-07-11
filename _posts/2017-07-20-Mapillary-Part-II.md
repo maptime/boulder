@@ -8,8 +8,19 @@ permalink: mapillary-part-ii
 
 ---
 
+After getting involved in Christopher and Muthu's fascinating presentation at our last meetup, we didn't have tons of time to collect a lot of data. But here's the great news!!! :  We still have access to some 360 cameras, so we can go out and really contribute to the Mapillary project!
 
-< text from meetup page>
+Mapillary is a platform for crowd-sourcing street-level imagery. Anyone can create high quality geo-referenced imagery by installing the app and taking a walk with a GPS enabled camera or smart phone (it doesn't *have* to be 360).  Then, based on all of these images, Mapillary is able to determine the location of all sorts of fixed objects such as traffic signs. 
+
+Pretty great stuff.
+
+We'll do a quick overview for those who couldn't make it last time, then head out to collect data. At the end of the session, we'll upload our images and see how we've added to the Mapillary coverage.
+
+Hope to see you there!
+
+- Maptime Boulder Team
+
+p.s. Return to this page for some detailed app/camera instructions as July 20th approaches.
 
 
 ### Instructions for All
