@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: Photo Mapping part II!
-rsvp: https://www.meetup.com/Maptime-Boulder/events/240856226/
+rsvp: https://www.meetup.com/Maptime-Boulder/events/241391674/
 date: 2017-07-20 17:30:00-06:00 #Put in the time of the event
 permalink: mapillary-part-ii
 
