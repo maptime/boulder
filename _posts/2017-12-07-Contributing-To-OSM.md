@@ -2,7 +2,7 @@
 layout: event
 category: event
 title: OpenStreetMap! Contributing to a world map and discussing the best way to do it!
-rsvp: https://www.meetup.com/Maptime-Boulder/events/241391674/
+rsvp: https://www.meetup.com/Maptime-Boulder/events/245189996/
 date: 2017-12-07 18:00:00-06:00 #Put in the time of the event
 permalink: OSM-contributing
 
