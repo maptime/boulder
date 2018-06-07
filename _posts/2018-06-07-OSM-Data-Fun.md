@@ -19,33 +19,39 @@ And yes, that's a picture of a cake... you can screen print cakes, I've heard...
 NOTE: We won't be hosting a July 5th meetup as many folks will be out of town.
 
 
-# Instructions
-_Last Edited by Jennings Anderson, June 7, 2018_
+# Instructions + Notes
+The goal of tonight's meetup is to install and explore the abilities of QGIS for styling and representing data from OpenStreetMap. 
 
+What's special about OSM data? It has a little bit of everything. Want a pretty good street network? Sure. Want endless amounts of metadata to filter and style off? Absolutely! 
 
-### 1. Install QGIS!
+### 1. Install QGIS
 QGIS (QuantumGIS) is an Open-Source GIS software available on all platforms. [Download Page](https://qgis.org/en/site/forusers/download.html)
 
 ###### _QGIS 2 or QGIS 3_?
 
-If you have experience with using QGIS 2, recommend sticking with what works and you're familiar with.
+If you have experience with using QGIS 2, I recommend sticking with what works and you're familiar with... 
 
 ### 2. Install a plugin to handle [OpenStreetMap](http://openstreetmap.org) data
 There are a variety of tools to get OSM data into QGIS. 
-We've tested [QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/) with the newest QGIS (QGIS3), and it seems to work pretty well.
+[QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/) is a popular one. If you already have an OSM file, QGIS can import the file with a limited schema (limited metadata).
 
 
-### Downloading MORE OSM data
+##### Rather download larger chunks of OSM data?
 * GeoFabrik makes Country / Regional level extracts [available here](http://download.geofabrik.de/)
 
-For simplicity, here are two files to start with: both Denver and Boulder. These have all OSM attributes... 
+For simplicity, and if you'd like to incorporate more metadata, here are two files to start with: both Denver and Boulder. These have all OSM attributes... 
 
-[Boulder](/boulder/assets/boulder.geojson.zip)
+[Boulder](/boulder/assets/geojson/boulder.geojson.zip)
 
-[Denver](/boulder/assets/denver.geojson.zip)
-
-
-### 3. Load into QGIS
+[Denver](/boulder/assets/geojson/denver.geojson.zip)
 
 
+### 3.Load into QGIS and Filter/Style
 
+Instructions here will vary based on your data and version of QGIS.
+
+
+
+
+
+_Last Edited by Jennings, June 7, 2018_
