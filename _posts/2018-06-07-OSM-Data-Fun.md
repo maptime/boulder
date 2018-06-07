@@ -17,3 +17,35 @@ And yes, that's a picture of a cake... you can screen print cakes, I've heard...
 -Your Maptime Boulder Organizers
 
 NOTE: We won't be hosting a July 5th meetup as many folks will be out of town.
+
+
+# Instructions
+_Last Edited by Jennings Anderson, June 7, 2018_
+
+
+### 1. Install QGIS!
+QGIS (QuantumGIS) is an Open-Source GIS software available on all platforms. [Download Page](https://qgis.org/en/site/forusers/download.html)
+
+###### _QGIS 2 or QGIS 3_?
+
+If you have experience with using QGIS 2, recommend sticking with what works and you're familiar with.
+
+### 2. Install a plugin to handle [OpenStreetMap](http://openstreetmap.org) data
+There are a variety of tools to get OSM data into QGIS. 
+We've tested [QuickOSM](https://plugins.qgis.org/plugins/QuickOSM/) with the newest QGIS (QGIS3), and it seems to work pretty well.
+
+
+### Downloading MORE OSM data
+* GeoFabrik makes Country / Regional level extracts [available here](http://download.geofabrik.de/)
+
+For simplicity, here are two files to start with: both Denver and Boulder. These have all OSM attributes... 
+
+[Boulder](/boulder/assets/boulder.geojson.zip)
+
+[Denver](/boulder/assets/denver.geojson.zip)
+
+
+### 3. Load into QGIS
+
+
+
