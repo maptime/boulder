@@ -48,9 +48,20 @@ For simplicity, and if you'd like to incorporate more metadata, here are two fil
 
 ### 3.Load into QGIS and Filter/Style
 
-Instructions here will vary based on your data and version of QGIS.
+Instructions here will vary based on your data and version of QGIS.... This is what we'll play with tonight
 
 
+
+
+
+### 4. Export your map as an image...
+and see what it could look like on a shirt, or hat, or blanket, or... whatever! 
+
+There are a variety of services online, here are two that offer low-quantity printing on various mediums: 
+
+[Vista Prints](https://www.vistaprint.com/clothing-bags/mens-t-shirts?txi=18110&xnid=TopNav_T-shirts_Clothing&xnav=TopNav)
+
+[CustomInk](https://www.customink.com/products/categories/no-minimum/96)
 
 
 
